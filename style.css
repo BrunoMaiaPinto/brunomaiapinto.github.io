@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px / 16px = 0.625 = 62.5% */ }
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
+  color: #f9f7f6; }
+
+.header {
+  background-color: #f9f7f6; }
+  .header__nav {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__links {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem; }
+  .header__icon {
+    width: 4rem;
+    height: 4rem; }
+  .header__link:link, .header__link:visited {
+    color: #5643fa;
+    transition: all 0.3s; }
+  .header__link:hover, .header__link:active {
+    color: #2998ff; }
+  .header__logo {
+    color: inherit;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    background-color: #5643fa;
+    border-radius: 15px;
+    text-decoration: none; }
+
+.soft-skill {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center; }
+
+.skill-logo {
+  fill: #5643fa;
+  width: 4rem;
+  height: 4rem; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 5rem; }
+  .hero__text {
+    background-color: rebeccapurple; }
+
+.footer {
+  padding: 3rem;
+  border-top: 1px solid #aaa;
+  margin-top: 50px;
+  font-size: 1.6rem;
+  color: #5643fa;
+  text-align: center; }

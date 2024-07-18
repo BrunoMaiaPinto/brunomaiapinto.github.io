@@ -1,0 +1,55 @@
+.header {
+  background-color: $color-grey-light-1;
+
+  &__nav {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-primary;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-light;
+  }
+
+  &__logo {
+    color: inherit;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    background-color: $color-primary;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+}
+
+.soft-skill {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-logo {
+  fill: $color-primary;
+  width: 4rem;
+  height: 4rem;
+}
