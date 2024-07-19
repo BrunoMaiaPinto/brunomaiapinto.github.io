@@ -18,10 +18,18 @@ body {
 .header {
   background-color: #f9f7f6; }
   .header__nav {
-    padding: 4rem;
+    padding: 2rem 4rem 2rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .header__logo {
+    color: inherit;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    background-color: #5643fa;
+    border-radius: 15px;
+    text-decoration: none; }
   .header__links {
     list-style: none;
     display: flex;
@@ -34,14 +42,37 @@ body {
     transition: all 0.3s; }
   .header__link:hover, .header__link:active {
     color: #2998ff; }
-  .header__logo {
-    color: inherit;
-    font-size: 3rem;
-    font-weight: 500;
-    padding: 0.8rem;
-    background-color: #5643fa;
-    border-radius: 15px;
-    text-decoration: none; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  padding: 5rem;
+  margin: auto 0; }
+  .hero__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+  .hero__heading {
+    color: #5643fa;
+    font-size: 4rem;
+    text-align: center; }
+  .hero__text {
+    color: #aaa;
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    grid-row: 2 / 3; }
+  .hero__img {
+    grid-column: 2 / -1;
+    grid-row: 1/3;
+    width: 60%; }
+
+h2 {
+  color: #5643fa;
+  font-size: 3.5rem;
+  text-align: center; }
 
 .soft-skill {
   display: flex;
@@ -53,14 +84,6 @@ body {
   fill: #5643fa;
   width: 4rem;
   height: 4rem; }
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  padding: 5rem; }
-  .hero__text {
-    background-color: rebeccapurple; }
 
 .footer {
   padding: 3rem;
