@@ -93,7 +93,8 @@ h2 {
 
 .hpt {
   width: 35%;
-  display: inline-block; }
+  display: inline-block;
+  border-radius: 10px; }
 
 .test {
   text-decoration: none;
