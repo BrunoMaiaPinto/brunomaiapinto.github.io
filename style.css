@@ -9,6 +9,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   /* 10px / 16px = 0.625 = 62.5% */ }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Comfortaa", sans-serif;
@@ -93,8 +96,11 @@ h2 {
 
 .hpt {
   width: 35%;
-  display: inline-block;
-  border-radius: 10px; }
+  display: block;
+  border-radius: 10px;
+  transition: all 0.4s; }
+  .hpt:hover {
+    transform: scale(1.1); }
 
 .test {
   text-decoration: none;

@@ -61,8 +61,13 @@ h2 {
 
 .hpt {
   width: 35%;
-  display: inline-block;
+  display: block;
   border-radius: 10px;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .test {
