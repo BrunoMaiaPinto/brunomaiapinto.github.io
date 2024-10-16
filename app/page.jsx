@@ -16,7 +16,7 @@ export default function Home() {
         src={bg}
         fill
         placeholder="blur"
-        quality={80}
+        quality={40}
         className="object-cover object-top opacity-20 grayscale blur-[2px]"
         alt="Laptop coding desk"
       />
