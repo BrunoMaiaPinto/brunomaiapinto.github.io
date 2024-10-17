@@ -1,13 +1,34 @@
+import bg from "@/public/bg.jpg";
 import Image from "next/image";
 import {
   SiCss3,
   SiHtml5,
   SiJavascript,
+  SiPython,
   SiReact,
   SiSass,
   SiTailwindcss,
 } from "react-icons/si";
-import bg from "@/public/bg.jpg";
+
+const skills = [
+  { icon: SiHtml5, title: "HTML" },
+  { icon: SiCss3, title: "CSS" },
+  { icon: SiSass, title: "SASS" },
+  { icon: SiJavascript, title: "JavaScript" },
+  { icon: SiReact, title: "React" },
+  { icon: SiTailwindcss, title: "Tailwind CSS" },
+  // { icon: SiPython, title: "Python" },
+];
+
+const Skills = function () {
+  return (
+    <div className="flex justify-center gap-6 mt-4">
+      {skills.map(({ icon: Icon, title }) => (
+        <Icon key={title} className="h-10 w-10" title="title" />
+      ))}
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -29,14 +50,7 @@ export default function Home() {
           Junior Front-End Web Developer
         </p>
         <h2 className="text-2xl">Technical Skills:</h2>
-        <div className="flex justify-center gap-6 mt-4">
-          <SiHtml5 className="h-10 w-10" title="HTML" />
-          <SiCss3 className="h-10 w-10" title="CSS" />
-          <SiSass className="h-10 w-10" title="SASS" />
-          <SiJavascript className="h-10 w-10" title="JavaScript" />
-          <SiReact className="h-10 w-10" title="React" />
-          <SiTailwindcss className="h-10 w-10" title="Tailwind CSS" />
-        </div>
+        <Skills />
       </div>
     </main>
   );
