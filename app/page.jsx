@@ -4,6 +4,7 @@ import {
   SiCss3,
   SiHtml5,
   SiJavascript,
+  SiNodedotjs,
   SiPython,
   SiReact,
   SiSass,
@@ -14,17 +15,18 @@ const skills = [
   { icon: SiHtml5, title: "HTML" },
   { icon: SiCss3, title: "CSS" },
   { icon: SiSass, title: "SASS" },
+  { icon: SiTailwindcss, title: "Tailwind CSS" },
   { icon: SiJavascript, title: "JavaScript" },
   { icon: SiReact, title: "React" },
-  { icon: SiTailwindcss, title: "Tailwind CSS" },
   // { icon: SiPython, title: "Python" },
+  // { icon: SiNodedotjs, title: "Node.js" },
 ];
 
 const Skills = function () {
   return (
     <div className="flex justify-center gap-6 mt-4">
       {skills.map(({ icon: Icon, title }) => (
-        <Icon key={title} className="h-10 w-10" title="title" />
+        <Icon key={title} className="h-10 w-10" title={title} />
       ))}
     </div>
   );
